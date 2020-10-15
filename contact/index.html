@@ -19,32 +19,24 @@
             </div>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a class="active" href="#">Projects</a></li>
-                <li><a href="../contact/">Contact</a></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a class="active" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="projects">
-
-        <div class="travel">
-            <h2>Travel Project</h2>
-            <img src="../img/travelly.jpg" alt="Travelly Project">
-            <div class="intro-social">
-                <a href="#"><img src="../icons/github.svg" alt="Github Social Link"></a>
-                <a href="#"><img src="../icons/linked-in.svg" alt="linked-in Social Link"></a>
-            </div>
-        </div>
-        <div class="photography">
-            <h2>Photography Project</h2>
-            <img src="../img/elena-joy.jpg" alt="photography">
-            <div class="intro-social">
-                <a href="#"><img src="../icons/github.svg" alt="Github Social Link"></a>
-                <a href="#"><img src="../icons/linked-in.svg" alt="linked-in Social Link"></a>
-            </div>
-
-        </div>
+    <section class="form-section">
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </section>
+
     <footer>
         <h4>xDev &copy2020</h4>
         <ul>
@@ -55,6 +47,7 @@
 
         </ul>
     </footer>
+
 </body>
 
 </html>
