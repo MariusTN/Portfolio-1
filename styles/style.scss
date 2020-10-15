@@ -1,0 +1,28 @@
+@import 'mixin';
+@import 'variables';
+@import 'global';
+
+
+.main-head {
+    width: 95%;
+    margin: 0 0 0 auto;
+}
+
+nav{
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+    width: 60%;
+    min-height: 10%;
+
+    .logo{
+        @include flex( flex-start, center, row);
+        flex: 1 1 10rem;
+        h1{
+            margin: 2rem;
+        }
+    }
+    ul{
+        @include flex(space-around, center, row);
+        flex: 1 1 40rem;
+    }
+}
