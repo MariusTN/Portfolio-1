@@ -11,14 +11,13 @@ html {
 }
 
 body {
-  font-family: "Ruhl", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-animation: opening 1s ease-in-out;
           animation: opening 1s ease-in-out;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Vibes", sans-serif;
 }
 
 li,
@@ -49,15 +48,6 @@ ul {
 a {
   text-decoration: none;
   color: #2c2c2c;
-}
-
-@media screen and (max-width: 1330) {
-  html {
-    font-size: 62.5%;
-  }
-  .splash {
-    display: none;
-  }
 }
 
 .main-head {
@@ -285,6 +275,86 @@ nav ul {
   to {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 1332px) {
+  html {
+    font-size: 62.5%;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  svg {
+    height: 60%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  nav {
+    padding: 2rem;
+  }
+  nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+    margin-top: 2rem;
+  }
+  nav ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60rem;
+            flex: 1 1 60rem;
+    margin: 2rem 0rem;
+  }
+  .intro-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .intro-images {
+    text-align: center;
+  }
+  .intro-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .intro-social a {
+    margin: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
